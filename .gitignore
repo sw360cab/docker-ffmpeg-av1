@@ -1,0 +1,14 @@
+.DS_Store
+.vscode
+*.log
+.env*
+node_modules/
+
+# media
+*.mov
+*.mp4
+*.mp3
+
+#data
+data/*
+!data/sample_0.mp4

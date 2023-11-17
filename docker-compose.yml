@@ -1,0 +1,22 @@
+services:
+
+  ffmpeg:
+    build:
+      context: .
+      dockerfile: ffmpeg.Dockerfile
+      tags:
+        - ffmpeg-exec
+        - ffmpeg
+
+  media-transcoder:
+    build:
+      context: .
+      args:
+        - "UID=${UID:-1000}"
+        - "GID=${GID:-1000}"
+    depends_on:
+      # useless as building is not affected by `depends_on`
+      # left as reference
+      - ffmpeg
+    volumes:
+      - ./data:/data
