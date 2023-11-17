@@ -1,4 +1,4 @@
-# Docker FFmpeg Av1
+# Docker FFmpeg AV1
 
 Containerized fully static compiled FFmpeg binary with AOM AV1 Codec and
 provided with a sample containerized Node.js application leveraging FFmpeg to process videos.
