@@ -155,7 +155,6 @@ RUN cd ffmpeg && \
   --disable-doc \
   --disable-podpages \
   --disable-debug \
-  --disable-protocols \
   --disable-muxer=rtsp \
   --disable-encoder=rtsp \
   --disable-decoder=rtsp \
